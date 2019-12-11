@@ -4,7 +4,8 @@ var db = require("../services/mysql");
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  db.getProduct((err, results) => {
+  let id = 70;
+  db.getProduct(id, (err, results) => {
     if (err) {
       console.log(err);
     } else {
