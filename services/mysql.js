@@ -10,6 +10,8 @@ if (process.env.NODE_ENV === "production") {
   });
 } else if (process.env.NODE_ENV === "development") {
   // See Navbar-Proxy/config/sqlConfig.example.js for how to setup
+
+  // this line runs the development mode local mysql
   var { connection } = require("../database/mysqlConfig");
 }
 connection.connect(); // Connect to DB
