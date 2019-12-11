@@ -18,6 +18,19 @@ connection.connect(); // Connect to DB
 connection.escape(); // Prevent SQL injection attacks
 // --------------------------------------------------------------------------------------------------
 
+// const getProduct = (productID, callback) => {
+//   connection.query(
+//     `SELECT * FROM products where id = ${productID};`,
+//     (err, results) => {
+//       if (err) {
+//         console.log(err);
+//       } else {
+//         callback(err, results);
+//       }
+//     }
+//   );
+// };
+
 const getProduct = (productID, callback) => {
   connection.query(
     `SELECT * FROM products where id = ${productID};`,
@@ -30,19 +43,6 @@ const getProduct = (productID, callback) => {
     }
   );
 };
-
-// const getProduct = (productID, callback) => {
-//   productDB.query(
-//     `SELECT * FROM products where id = ${productID};`,
-//     (err, results) => {
-//       if (err) {
-//         console.log(err);
-//       } else {
-//         callback(err, results);
-//       }
-//     }
-//   );
-// };
 
 module.exports = {
   getProduct
