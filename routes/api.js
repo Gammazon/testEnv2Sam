@@ -3,7 +3,7 @@ var router = express.Router();
 var db = require("../services/mysql");
 
 /* GET home page. */
-router.get("/:id", function(req, res, next) {
+router.get("/", function(req, res, next) {
   let id = req.params.id;
   db.getProduct(id, (err, results) => {
     if (err) {
