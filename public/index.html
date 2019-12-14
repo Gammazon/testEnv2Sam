@@ -7,6 +7,11 @@
     <link
       rel="stylesheet"
       type="text/css"
+      href="./stylesheets/proxyStyle.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
       href="https://product-description.s3.us-east-2.amazonaws.com/style.css"
     />
     <link
@@ -26,12 +31,19 @@
     />
   </head>
   <body>
-    <div id="b2_root"></div>
-    <div id="root"></div>
-    <div id="b1_root"></div>
-    <div id="tsReviewContainer"></div>
+    <div id="appContainerFullSamProxy">
+      <span>
+        <div id="b2_root"></div>
+        <div id="root"></div>
+      </span>
+      <div>
+        <div id="b1_root"></div>
+      </div>
+      <div>
+        <div id="tsReviewContainer"></div>
+      </div>
+    </div>
 
-    <!-- <script src="bundle.js"></script> -->
     <!-- Sam -->
     <script src="https://product-description.s3.us-east-2.amazonaws.com/bundle.js"></script>
     <!-- Ben Carousel -->
