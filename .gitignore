@@ -1,0 +1,9 @@
+node_modules/
+database/mysqlConfig.js
+.gitignore
+.elasticbeanstalk/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+scratch.js
